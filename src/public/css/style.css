@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #120d31;
+  --second-color: #ec0b43;
+
+  --main-font-color: #1c1c1c;
+  --second-font-color: #f0f0f0;
+
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+
+  --font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  /* Box */
+  --box-radius: 3px;
+  --box-space: 10px; /* Margin & padding within a box */
+}
+
+svg {
+  display: block;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--font-family);
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: #e1e1e1;
+}
+
+.center {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--font-family);
+}
+
+.btn-second {
+  background: var(--second-color);
+  color: var(--second-font-color);
+}
+
+.user-pic {
+  border-radius: 9999px;
+  border: 1px solid var(--main-font-color);
+  overflow: hidden;
+}
+
+.user-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.user-pic.small {
+  height: 40px;
+  width: 40px;
+}
+
+.user-pic.normal {
+  height: 300px;
+  width: 300px;
+}
+
+/* PAGES */
+.page {
+  padding-top: 1rem;
+}
+
+.home,
+.settings,
+.user {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* HOME PAGE */
+
+.home .post-form,
+.home .post {
+  margin-bottom: 1rem;
+}
+
+/* Settings */
+
+/* CREDENTIALS PAGE: LOG IN & SIGN UP & SETTINGS */
+
+.credentials-wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--box-space);
+  background: var(--main-color);
+  text-align: center;
+  margin: 0 auto;
+  border-radius: var(--box-radius);
+}
+
+.credentials-header {
+  color: var(--second-font-color);
+  margin-bottom: 1rem;
+}
+
+.credentials-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  display: block;
+  background: white;
+  font-weight: 500;
+  height: 30px;
+  border-radius: var(--box-radius);
+  padding: var(--box-space);
+  margin-bottom: var(--box-space);
+  font-size: 1rem;
+}
+
+.credentials-label {
+  display: block;
+  text-align: left;
+  color: lightgray;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.credentials-input.file {
+  height: auto;
+}
+
+.credentials-btn {
+  width: 100%;
+  margin-bottom: var(--box-space);
+}
+
+.credentials-alt {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+/* USER PAGE */
+
+.user-hero {
+  border-radius: var(--box-radius);
+  background: white;
+  padding: var(--box-space);
+  text-align: center;
+  margin-bottom: var(--box-space);
+}
+
+.user-hero-pic {
+  margin: 0 auto;
+  margin-bottom: var(--box-space);
+}
+
+.user-posts .post {
+  margin-bottom: var(--box-space);
+}

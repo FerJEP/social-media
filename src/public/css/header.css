@@ -1,0 +1,54 @@
+.app-header {
+  background: var(--main-color);
+  color: var(--second-font-color);
+  height: 70px;
+  width: 100vw;
+}
+
+.app-header a {
+  color: var(--second-font-color);
+  text-decoration: none;
+}
+
+.header-body {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header-icon {
+  font-size: 40px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.header-hover:hover,
+.header-icon:hover {
+  background: var(--second-color);
+  border-radius: var(--box-radius);
+}
+
+.header-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.header-profile .user-pic {
+  border-color: white;
+  margin-right: 5px;
+}
+
+.header-profile-username {
+  font-size: 1.2rem;
+  font-weight: 500;
+}

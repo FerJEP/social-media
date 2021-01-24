@@ -1,0 +1,92 @@
+/* POST FORM */
+.post-form {
+  background: var(--main-color);
+  border-radius: var(--box-radius);
+  padding: var(--box-space);
+  width: 100%;
+}
+
+.post-form-textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  font-family: var(--font-family);
+  padding: var(--box-space);
+  margin-bottom: var(--box-space);
+}
+
+.post-form-btn {
+  margin-left: auto;
+}
+
+/* POST */
+
+.post {
+  width: 100%;
+  background: white;
+  padding: var(--box-space);
+  border-radius: var(--box-radius);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--box-space);
+  font-weight: 500;
+}
+
+.post-username a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-username a:hover {
+  color: var(--second-color);
+}
+
+.post-pic {
+  margin-right: 5px;
+}
+
+.post-date {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+/* MESSAGES */
+
+.app-messages {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  padding: 0 1rem;
+}
+
+.app-message {
+  color: white;
+  font-size: 1.2rem;
+  padding: var(--box-space);
+  margin-bottom: var(--box-space);
+  width: 100%;
+  border-radius: var(--box-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-message.error {
+  background: var(--danger-color);
+}
+
+.app-message.success {
+  background: var(--success-color);
+}
+.app-message-close {
+  outline: none;
+  border: none;
+  color: white;
+  background: none;
+}

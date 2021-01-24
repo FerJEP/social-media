@@ -1,0 +1,6 @@
+vendor/*
+.env
+
+# Ignoring everything inside images but default folders
+images/*
+!images/**/default/
