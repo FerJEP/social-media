@@ -13,7 +13,23 @@ Simple social media website using PHP and MySql.
 
 ## Requirements
  - [php-imagick](https://www.php.net/manual/en/book.imagick.php)
- 
+
+### MySQL schema
+You have the [schema.sql](./schema.sql) that this project expects from your database.
+
+First, log into your mysql and create a database:
+```
+CREATE DATABASE database_name;
+```
+Then, log out and type in your terminal: 
+```
+$ mysql database_name < path_to_schema.sql  
+```
+If you need to pass user and password to your login, use instead:
+```
+$ mysql -u my_user -p database_name < path_to_schema.sql  
+```
+
 ## Environment variables 
 
 You can create a `.env` file in the root of the project. 
