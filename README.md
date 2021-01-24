@@ -1,5 +1,5 @@
 # Social Media
-Simple social media website using PHP and MySql.
+Simple social media website using PHP and MySQL.
 
 - It uses a custom [Router](./src/Router.php) which can handle dynamic routes
 - A user can: 
